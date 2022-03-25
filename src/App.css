@@ -1,0 +1,43 @@
+/* Styling the input field variable and image content*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+.main-image {
+    background: url(https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGlicmFyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200vh;
+    height: 80vh;
+    text-decoration-color: white;
+    position: relative;
+    background-attachment: fixed;
+
+}
+.filter ::after{
+background-color: rgba(230, 238, 238, 0.4);
+content: " ";
+display: block;
+height: 100%;
+left: 0;
+top: 0;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+.card-title {
+    overflow: hidden;
+    color: rgba(0,0,0,0.85);
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
